@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reacciona a la Imagen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <img src="https://picsum.photos/600/400" alt="Imagen para reaccionar">
+
+  <div class="reacciones">
+    <button onclick="reaccion('👍')">👍</button>
+    <button onclick="reaccion('❤️')">❤️</button>
+    <button onclick="reaccion('😂')">😂</button>
+    <button onclick="reaccion('😮')">😮</button>
+  </div>
+
+  <div class="contador" id="contador">Reacciones: Cargando...</div>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
